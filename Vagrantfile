@@ -33,11 +33,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cd fixmystreet
       git config core.worktree "../../../fixmystreet"
       echo "gitdir: ../.git/modules/fixmystreet" > .git
-      cd ../..
+      cd commonlib
+      git config core.worktree "../../../../../fixmystreet/commonlib"
+      echo "gitdir: ../../.git/modules/fixmystreet/modules/commonlib" > .git
+      cd ../../..
     fi
+    # Copy our own default config into place
     [ -f niu/fixmystreet/conf/general.yml ] || cp niu/conf/general.yml-example niu/fixmystreet/conf/general.yml
+    # Make sure the install-site script doesn't clone its own FMS...
+    ln -s /home/vagrant/niu/fixmystreet /home/vagrant/fixmystreet
     # Fetch and run install script
-    wget -O install-site.sh --no-verbose https://github.com/mysociety/commonlib/raw/master/bin/install-site.sh
+    wget -O install-site.sh --no-verbose https://github.com/mysociety/commonlib/raw/niu-davea/bin/install-site.sh
     sh install-site.sh --dev fixmystreet vagrant 127.0.0.1.xip.io
     # We want to be on port 3000 for development
     sed -i -r -e "s,^( *BASE_URL: .*)',\\1:3000'," niu/fixmystreet/conf/general.yml
