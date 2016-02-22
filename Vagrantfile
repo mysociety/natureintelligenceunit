@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       echo "Checking out submodules"
       apt-get -qq install -y git >/dev/null
       cd niu
-      git submodule --quiet update --init --recursive
+      git submodule update --init --recursive
       cd fixmystreet
       git config core.worktree "../../../fixmystreet"
       echo "gitdir: ../.git/modules/fixmystreet" > .git
