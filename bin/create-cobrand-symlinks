@@ -28,7 +28,7 @@ for cobrand in $(pwd)/$WEB_TEMPLATES_SOURCE_DIR/*; do
 done
 
 EMAIL_TEMPLATES_SOURCE_DIR=templates/email
-EMAIL_TEMPLATES_TARGET_DIR=fxmystreet/templates/email
+EMAIL_TEMPLATES_TARGET_DIR=fixmystreet/templates/email
 for cobrand in $(pwd)/$EMAIL_TEMPLATES_SOURCE_DIR/*; do
     ln $LN_FLAGS $cobrand $EMAIL_TEMPLATES_TARGET_DIR/
 done
@@ -45,3 +45,4 @@ done
 cd $WEB_ASSETS_SOURCE_DIR
 echo "Creating symlinks in $(pwd):"
 ln $LN_FLAGS ../../$WEB_ASSETS_TARGET_DIR/sass .
+ln $LN_FLAGS ../../$WEB_ASSETS_TARGET_DIR/fixmystreet .

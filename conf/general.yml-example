@@ -14,8 +14,8 @@
 # for you.
 
 # PostgreSQL database details for FixMyStreet
-FMS_DB_HOST: 'localhost'
-FMS_DB_PORT: '5432'
+FMS_DB_HOST: ''
+FMS_DB_PORT: ''
 FMS_DB_NAME: 'fixmystreet'
 FMS_DB_USER: 'vagrant'
 FMS_DB_PASS: ''
