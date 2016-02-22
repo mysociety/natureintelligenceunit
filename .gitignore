@@ -4,3 +4,7 @@
 .bundle
 /web/cobrands/*/base.css
 /web/cobrands/*/layout.css
+/web/cobrands/sass
+/web/cobrands/fixmystreet
+/.vagrant
+/data

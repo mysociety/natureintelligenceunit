@@ -61,8 +61,8 @@ LANGUAGES:
 TIME_ZONE: ""
 
 # File locations for uploaded photos and cached geocoding results.
-UPLOAD_DIR: '../upload/'
-GEO_CACHE: '../cache/'
+UPLOAD_DIR: '/home/vagrant/upload/'
+GEO_CACHE: '/home/vagrant/cache/'
 
 # Location of MapIt, to map points to administrative areas, and what types of
 # area from it you want to use. If left blank, a default area will be used
