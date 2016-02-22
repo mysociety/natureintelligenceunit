@@ -42,6 +42,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     [ -f niu/fixmystreet/conf/general.yml ] || cp niu/conf/general.yml-example niu/fixmystreet/conf/general.yml
     # Make sure the install-site script doesn't clone its own FMS...
     ln -s /home/vagrant/niu/fixmystreet /home/vagrant/fixmystreet
+    # Create symlinks for the NIU cobrand files
+    ./niu/bin/create-cobrand-symlinks
     # Fetch and run install script
     wget -O install-site.sh --no-verbose https://github.com/mysociety/commonlib/raw/niu-davea/bin/install-site.sh
     sh install-site.sh --dev fixmystreet vagrant 127.0.0.1.xip.io
