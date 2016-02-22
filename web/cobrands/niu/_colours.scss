@@ -5,15 +5,18 @@
 
 /* COLOURS */
 
+$niu_black: #1C1C1B;
+$niu_yellow: #FFC627;
+
 $orange: #ff9900;
 $bluey: #6688ff;
 
-$primary: $orange;
-$primary_b: #000000;
+$primary: $niu_yellow;
+$primary_b: $niu_black;
 $primary_text: #222222;
 
-$base_bg: $bluey;
-$base_fg: #000;
+$base_bg: $niu_yellow;
+$base_fg: $niu_black;
 
 $map_nav_bg: $bluey;
 $nav_fg: #000;
@@ -24,3 +27,7 @@ $col_click_map_dark: darken($bluey, 10%);
 
 $col_fixed_label: #00BD08;
 $col_fixed_label_dark: #4B8304;
+
+$body-font: "Montserrat", Helvetica, Arial, sans-serif;
+$meta-font: inherit;
+$heading-font: inherit;

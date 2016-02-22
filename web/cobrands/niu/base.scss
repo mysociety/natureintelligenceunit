@@ -4,3 +4,41 @@
 @import "compass";
 
 @import "../sass/base";
+
+#site-header {
+    background: $primary;
+    border-top-color: $niu_black;
+}
+
+#site-logo {
+    height: 48px;
+    top: 0.25em; // height of border-top on #site-header
+    background: transparent url(/cobrands/niu/images/site-logo-mobile.png) 0 0 no-repeat;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url(/cobrands/niu/images/site-logo-mobile@2x.png);
+        background-size: 100px 48px;
+    }
+}
+
+#front-main {
+    background: darken($primary, 10%) url(/cobrands/niu/images/home-background.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 1em;
+}
+
+#postcodeForm {
+    background: transparent;
+}
+
+#geolocate_link {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+#report-cta {
+    border-color: #fff;
+    color: #fff;
+}

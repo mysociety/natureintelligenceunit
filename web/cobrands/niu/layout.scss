@@ -1,2 +1,43 @@
 @import "_colours";
 @import "../sass/layout";
+
+#site-logo,
+body.frontpage #site-logo {
+    height: 65px;
+    top: 1em;
+    background: url(/cobrands/niu/images/site-logo-desktop.png) 0 0 no-repeat;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url(/cobrands/niu/images/site-logo-desktop@2x.png);
+        background-size: 175px 65px;
+    }
+}
+
+body.frontpage #site-logo {
+    height: 96px;
+    background-image: url(/cobrands/niu/images/site-logo-home.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url(/cobrands/niu/images/site-logo-home@2x.png);
+        background-size: 250px 96px;
+    }
+}
+
+#front-main {
+    background: darken($primary, 10%) url(/cobrands/niu/images/home-background.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+}
+
+.nav-wrapper .nav-wrapper-2 {
+    border-top-color: $niu_black;
+}
+
+.nav-menu--mysoc {
+    background-color: $niu_black;
+}
+
+// selected nav bar items
+.nav-menu--main span {
+    color: #fff;
+}
