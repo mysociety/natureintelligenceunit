@@ -15,5 +15,13 @@ sub example_places {
     return ( 'Cwmcarn Forest', 'Hyde Park' );
 }
 
+sub disambiguate_location {
+    return {
+        country => 'gb',
+        google_country => 'uk',
+        bing_culture => 'en-GB',
+        bing_country => 'United Kingdom'
+    };
+}
 
 1;
