@@ -51,9 +51,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     sed -i -r -e "s,^( *BASE_URL: .*)',\\1:3000'," niu/fixmystreet/conf/general.yml
     # All done
     echo "****************"
-    echo "You can now ssh into your vagrant box: vagrant ssh"
-    echo "The website code is found in: ~/niu"
-    echo "You can run the dev server with: fixmystreet/script/fixmystreet_app_server.pl [-d] [-r] [--fork]"
+    echo 'All done, at last!'
+    echo "To run the server, type:"
+    echo "  vagrant ssh"
+    echo "and then:"
+    echo "~/niu/fixmystreet/script/fixmystreet_app_server.pl -d -f"
+    echo "Then you'll be able to see the site at http://localhost:3000/"
   EOS
 
   # Create a private network, which allows host-only access to the machine
