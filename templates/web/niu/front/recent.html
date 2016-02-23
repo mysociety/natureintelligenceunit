@@ -1,0 +1,17 @@
+[%
+    recent_photos = c.cobrand.recent_photos('front', 5);
+%]
+
+[% IF recent_photos.size %]
+<div id="front-recently">
+    <h2>[% loc('Recent noticings') %]</h2>
+
+    <section class="full-width">
+        <ul class="item-list item-list--reports item-list--front-page">
+          [% FOREACH problem IN recent_photos %]
+            [% INCLUDE 'front/_list-entry.html' %]
+          [% END %]
+        </ul>
+    </section>
+</div>
+[% END %]
