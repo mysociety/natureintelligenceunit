@@ -1,6 +1,7 @@
 @import "_colours";
 @import "../sass/layout";
 
+// Larger logo on wide screens
 #site-logo,
 body.frontpage #site-logo {
     height: 65px;
@@ -13,6 +14,7 @@ body.frontpage #site-logo {
     }
 }
 
+// Even bigger logo on the homepage
 body.frontpage #site-logo {
     height: 96px;
     background-image: url(/cobrands/niu/images/site-logo-home.png);
@@ -20,6 +22,18 @@ body.frontpage #site-logo {
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         background-image: url(/cobrands/niu/images/site-logo-home@2x.png);
         background-size: 250px 96px;
+    }
+}
+
+// Smaller logo on the map page
+body.mappage #site-logo {
+    top: 0.75em;
+    height: 48px;
+    background: transparent url(/cobrands/niu/images/site-logo-mobile.png) 0 0 no-repeat;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url(/cobrands/niu/images/site-logo-mobile@2x.png);
+        background-size: 100px 48px;
     }
 }
 

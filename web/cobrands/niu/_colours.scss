@@ -18,12 +18,12 @@ $primary_text: #222222;
 $base_bg: $niu_yellow;
 $base_fg: $niu_black;
 
-$map_nav_bg: $bluey;
-$nav_fg: #000;
-$nav_fg_hover: $primary;
+$map_nav_bg: $niu_yellow;
+$nav_fg: $niu_black;
+$nav_fg_hover: $niu_yellow;
 
-$col_click_map: $bluey;
-$col_click_map_dark: darken($bluey, 10%);
+$col_click_map: $niu_yellow;
+$col_click_map_dark: darken($niu_yellow, 10%);
 
 $col_fixed_label: #00BD08;
 $col_fixed_label_dark: #4B8304;
