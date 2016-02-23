@@ -1,0 +1,19 @@
+<section class="full-width">
+    [% INCLUDE column
+        problems = problems.${body.id}
+    %]
+</section>
+
+[% BLOCK column %]
+    <ul class="item-list item-list--reports">
+        [% IF problems %]
+            [% FOREACH problem IN problems %]
+                [% INCLUDE 'reports/_list-entry.html' include_sentinfo = 1 include_lastupdate = 1 %]
+            [% END %]
+        [% ELSE %]
+            <li class="item-list__item item-list__item--empty">
+                <p>[% loc('There are no noticings to show.') %]</p>
+            </li>
+        [% END %]
+    </ul>
+[% END %]
