@@ -49,6 +49,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     sh install-site.sh --dev fixmystreet vagrant 127.0.0.1.xip.io
     # We want to be on port 3000 for development
     sed -i -r -e "s,^( *BASE_URL: .*)',\\1:3000'," niu/fixmystreet/conf/general.yml
+    # Set up some initial DB bits
+    su - vagrant -c "psql -d fixmystreet -f ~/niu/db/bodies.sql"
+    su - vagrant -c "psql -d fixmystreet -f ~/niu/db/categories.sql"
     # All done
     echo "****************"
     echo 'All done, at last!'
