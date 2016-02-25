@@ -62,3 +62,67 @@ body.mappage #site-logo {
 #report-a-problem-sidebar {
   display: none;
 }
+
+.naturehood-title {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.dashboard {
+  h1 {
+    font-size: 3em;
+  }
+  table {
+    width: 100%;
+    td, th {
+      padding: 0.25em;
+    }
+    td {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .score-value {
+    float: right;
+    font-size: 4em;
+    padding-right: 2em;
+  }
+  .score-label {
+    float: left;
+    line-height: 4em;
+    padding-left: 4em;
+    font-size: 1.5em;
+  }
+
+  .scores {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+
+      .green, .amber, .red {
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+        background-color: gray;
+        margin: 2px 8px 0 0;
+      }
+      .green {
+        background-color: #CF6;
+      }
+      .amber {
+        background-color: #FF8000;
+      }
+      .red {
+        background-color: #F00;
+      }
+    }
+  }
+}
+

@@ -28,4 +28,9 @@ sub enter_postcode_text {
     return 'Enter your postcode or area name';
 }
 
+sub areas_on_around {
+    return [ 144380 ];
+}
+
+
 1;

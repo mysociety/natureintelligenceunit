@@ -1,0 +1,17 @@
+<h2 class="center">Recent Contributions</h2>
+
+[% select_status = BLOCK %]
+[% END %]
+
+[% select_category = BLOCK %]
+[% END %]
+
+[% IF use_section_wrapper %]
+<section class="full-width">
+    <form method="get" action="">
+[% END %]
+
+[% IF use_section_wrapper %]
+    </form>
+</section>
+[% END %]
