@@ -17,7 +17,10 @@ body.frontpage #site-logo {
 // Even bigger logo on the homepage
 body.frontpage #site-logo {
     height: 96px;
-    background-image: url(/cobrands/niu/images/site-logo-home.png);
+    background: none;
+    color: black;
+    font-size: 2.5em;
+    text-indent: 0;
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         background-image: url(/cobrands/niu/images/site-logo-home@2x.png);
@@ -48,10 +51,14 @@ body.mappage #site-logo {
 }
 
 .nav-menu--mysoc {
-    background-color: $niu_black;
+    display: none;
 }
 
 // selected nav bar items
 .nav-menu--main span {
     color: #fff;
+}
+
+#report-a-problem-sidebar {
+  display: none;
 }

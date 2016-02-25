@@ -6,13 +6,13 @@
     new_text =
         stats.recency == '1 week'
         ? nget(
-            "<big>%s</big> noticing in past week",
-            "<big>%s</big> noticings in past week",
+            "<big>%s</big> contribution in past week",
+            "<big>%s</big> contributions in past week",
             stats.new
           )
         : nget(
-            "<big>%s</big> noticing recently",
-            "<big>%s</big> noticings recently",
+            "<big>%s</big> contribution recently",
+            "<big>%s</big> contributions recently",
             stats.new
          );
 
@@ -23,8 +23,8 @@
     );
 
     updates_text = nget(
-        "<big>%s</big> update on noticings",
-        "<big>%s</big> updates on noticings",
+        "<big>%s</big> update on contributions",
+        "<big>%s</big> updates on contributions",
         stats.updates
     );
 

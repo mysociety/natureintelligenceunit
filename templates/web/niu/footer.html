@@ -23,16 +23,13 @@
                     <ul class="nav-menu nav-menu--main">
                         <li><[% IF c.req.uri.path == '/'
                             %]span[% ELSE %]a href="[% base %]/"[% END %] class="report-a-problem-btn"
-                            >[% loc("Record a noticing") %]</[% c.req.uri.path == '/' ? 'span' : 'a' %]></li>[%
+                            >[% loc("Contribute") %]</[% c.req.uri.path == '/' ? 'span' : 'a' %]></li>[%
                         %]<li><[% IF c.req.uri.path == '/my'
                             %]span[% ELSE %]a href="[% base %]/my"[% END
-                            %]>[% loc("My noticings") %]</[% c.req.uri.path == '/my' ? 'span' : 'a' %]></li>[%
+                            %]>[% loc("My Naturehood") %]</[% c.req.uri.path == '/my' ? 'span' : 'a' %]></li>[%
                         %]<li><[% IF c.req.uri.path == '/reports'
                             %]span[% ELSE %]a href="[% base %]/reports"[% END
-                            %]>[% loc("All noticings") %]</[% c.req.uri.path == '/reports' ? 'span' : 'a' %]></li>[%
-                        %]<li><[% IF c.req.uri.path == '/alert'
-                            %]span[% ELSE %]a href="[% base %]/alert[% pc ? '/list?pc=' : '' %][% pc | uri %]"[% END
-                            %]>[% loc("Local alerts") %]</[% c.req.uri.path == '/alert' ? 'span' : 'a' %]></li>[%
+                            %]>[% loc("All Naturehoods") %]</[% c.req.uri.path == '/reports' ? 'span' : 'a' %]></li>[%
                         %]<li><[% IF c.req.uri.path == '/faq'
                             %]span[% ELSE %]a href="[% base %]/faq"[% END
                             %]>[% loc("Help") %]</[% c.req.uri.path == '/faq' ? 'span' : 'a' %]></li>[%

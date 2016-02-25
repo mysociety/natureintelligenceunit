@@ -1,0 +1,10 @@
+<p>
+[%
+    tprintf(
+        loc('The information you provide here will be shared with your naturehood in <strong>%s</strong>.'),
+        all_body_names.join( '</strong>' _ loc(' or ') _ '<strong>' )
+    );
+%]
+
+[% INCLUDE 'report/new/councils_extra_text.html' %]
+</p>

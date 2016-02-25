@@ -12,7 +12,7 @@ sub allow_anonymous_reports { 1; }
 sub anonymous_account { return { name => 'Anonymous Submission', email => FixMyStreet->config('DO_NOT_REPLY_EMAIL') }; }
 
 sub example_places {
-    return ( 'Cwmcarn Forest', 'Hyde Park' );
+    return ( 'Haggerston Park', 'Mile End Park' );
 }
 
 sub disambiguate_location {
@@ -22,6 +22,10 @@ sub disambiguate_location {
         bing_culture => 'en-GB',
         bing_country => 'United Kingdom'
     };
+}
+
+sub enter_postcode_text {
+    return 'Enter your postcode or area name';
 }
 
 1;
