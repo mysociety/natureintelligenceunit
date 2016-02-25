@@ -21,6 +21,9 @@ sub disambiguate_location {
         google_country => 'uk',
         bing_culture => 'en-GB',
         bing_country => 'United Kingdom'
+        centre => '51.5004698326776,-0.109361505313849',
+        span   => '0.40512227589786,0.844407524758742',
+        bounds => [ 51.2867018983754, -0.510363135171181, 51.6918241742733, 0.334044389587561 ],
     };
 }
 
